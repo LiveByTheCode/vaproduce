@@ -240,5 +240,23 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .nav-links { display: none; }
+  .header-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: .7rem 0;
+  }
+
+  .header-row nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .75rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: .2rem;
+  }
 }
